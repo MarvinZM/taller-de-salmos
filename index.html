@@ -2,1159 +2,712 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Reconstructores de Jerusalén — Esdras y Nehemías</title>
-<meta name="description" content="Conoce a los personajes de Esdras y Nehemías: cómo influyeron en la reconstrucción del templo y los muros de Jerusalén. Antiguo Testamento, Ven, Sígueme 2026.">
-<meta name="theme-color" content="#0d0b08">
-<meta property="og:title" content="Reconstructores de Jerusalén">
-<meta property="og:description" content="Conoce a los personajes de Esdras y Nehemías y cómo influyeron en la reconstrucción del templo y los muros de Jerusalén.">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230d0b08'/%3E%3Cpath d='M20 82 L20 40 L28 40 L28 32 L36 32 L36 40 L44 40 L44 32 L52 32 L52 40 L60 40 L60 32 L68 32 L68 40 L76 40 L76 32 L84 32 L84 82 Z' fill='%23c9a24b'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://blogger.googleusercontent.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La poesía hebrea: un amigo a conocer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
-  html {
-    scroll-behavior: smooth;
-    background: #0d0b08;
-    color-scheme: dark;
-  }
-
-  html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-    background: #0d0b08;
-  }
-
-  :root {
-    --bg-deep: #0d0b08;
-    --purple: #241a2e;
-    --purple-deep: #17121c;
-    --gold: #c9a24b;
-    --gold-bright: #e8c877;
-    --cream: #f0e6d2;
-    --enemy-red: #5a2222;
-    --enemy-bg: #1c1414;
-  }
-
-  * { box-sizing: border-box; }
-
-  .rj-page {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    min-height: 100dvh;
-    background: radial-gradient(ellipse at top, #241c14 0%, var(--bg-deep) 55%);
-    font-family: 'Georgia', 'Iowan Old Style', serif;
-    color: var(--cream);
-    overflow-x: hidden;
-  }
-
-  .wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 44px 16px 90px;
-    padding-left: max(16px, env(safe-area-inset-left));
-    padding-right: max(16px, env(safe-area-inset-right));
-  }
-
-  header.hero {
-    text-align: center;
-    margin-bottom: 44px;
-  }
-
-  .eyebrow {
-    letter-spacing: 0.32em;
-    font-size: 0.65rem;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.85;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-    font-size: clamp(1.5rem, 6vw, 2.6rem);
-    margin: 0 0 10px;
-    color: var(--gold-bright);
-    text-shadow: 0 0 24px rgba(201,162,75,0.2);
-  }
-
-  .hero p {
-    max-width: 540px;
-    margin: 0 auto;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: rgba(240,230,210,0.65);
-    font-style: italic;
-    padding: 0 8px;
-  }
-
-  .divider-orn {
-    width: 56px;
-    height: 1px;
-    background: var(--gold);
-    opacity: 0.5;
-    margin: 20px auto 0;
-  }
-
-  section.category { margin-bottom: 56px; }
-
-  .cat-head {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 24px;
-  }
-
-  .cat-head .line {
-    flex: 1;
-    height: 1px;
-    background: linear-gradient(90deg, currentColor, transparent);
-    opacity: 0.4;
-  }
-
-  .cat-head h2 {
-    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
-    font-weight: 400;
-    font-size: clamp(0.95rem, 3.4vw, 1.1rem);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    margin: 0;
-    white-space: nowrap;
-  }
-
-  .cat-main { color: var(--gold-bright); }
-  .cat-leaders { color: var(--gold-bright); }
-  .cat-kings { color: #d9b96a; }
-  .cat-enemies { color: #c98a7a; }
-
-  /* --- grids --- */
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
-    gap: 20px;
-  }
-
-  .grid-photo {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 24px;
-  }
-
-  /* filas compactas: otros lideres, reyes/funcionarios, enemigos */
-  .list-compact {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  /* tarjetas especiales: intro y estudio final, siempre centradas y solas */
-  .grid-special {
-    grid-template-columns: 1fr;
-    max-width: 420px;
-    margin: 0 auto;
-  }
-
-  /* tarjeta de portada: introduce toda la experiencia */
-  .grid-cover {
-    grid-template-columns: 1fr;
-    max-width: 480px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 640px) {
-    .grid-photo {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  /* --- card shell --- */
-  .card-wrap {
-    perspective: 1400px;
-  }
-
-  .grid-photo .card-wrap,
-  .grid-special .card-wrap { aspect-ratio: 3 / 4.3; }
-
-  @media (max-width: 640px) {
-    .grid-photo .card-wrap,
-    .grid-special .card-wrap,
-    .cover-card {
-      aspect-ratio: auto !important;
-      height: 100vh;
-      height: 100dvh;
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-    }
-    .grid-photo,
-    .grid-special,
-    .grid-cover {
-      gap: 0;
-    }
-    html {
-      scroll-snap-type: y proximity;
-    }
-    section.category:has(.grid-photo),
-    section.category:has(.grid-special),
-    section.category:has(.grid-cover) {
-      margin-bottom: 0;
-    }
-  }
-
-  .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.85s cubic-bezier(.2,.8,.2,1);
-    cursor: pointer;
-  }
-
-  .card.flipped { transform: rotateY(180deg); }
-
-  .face {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 22px 44px -16px rgba(0,0,0,0.65), 0 0 0 1px rgba(201,162,75,0.3);
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* photo front (Ciro style) */
-  .face-front.photo {
-    background: radial-gradient(ellipse at 50% 40%, #1c1610 0%, #000 75%);
-    align-items: center;
-    justify-content: center;
-  }
-  .face-front.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-  }
-  .front-caption {
-    position: absolute;
-    left: 0; right: 0; bottom: 0;
-    padding: 16px 16px 13px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.88), rgba(0,0,0,0));
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--gold-bright);
-    text-align: center;
-  }
-
-  /* ---- filas tipo acordeón (otros lideres / reyes / enemigos) ---- */
-  .acc-row {
-    border-radius: 14px;
-    box-shadow: 0 14px 28px -14px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,162,75,0.28);
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .acc-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 18px;
-  }
-
-  .acc-leaders { background: radial-gradient(circle at 12% 30%, #33273f 0%, var(--purple-deep) 85%); }
-  .acc-kings { background: radial-gradient(circle at 12% 30%, #3a2c11 0%, #180f06 85%); }
-  .acc-enemies { background: radial-gradient(circle at 12% 30%, #4a2424 0%, var(--enemy-bg) 85%); }
-
-  .acc-icon {
-    flex: 0 0 auto;
-    width: 46px;
-    height: 46px;
-    display: block;
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
-  }
-
-  .acc-text {
-    flex: 1 1 auto;
-    min-width: 0;
-    text-align: left;
-  }
-
-  .acc-name {
-    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
-    font-size: 1.15rem;
-    letter-spacing: 0.02em;
-    color: var(--gold-bright);
-    line-height: 1.25;
-  }
-
-  .acc-role {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--cream);
-    opacity: 0.75;
-    margin-top: 3px;
-  }
-
-  .acc-chevron {
-    flex: 0 0 auto;
-    width: 22px;
-    height: 22px;
-    color: var(--gold);
-    opacity: 0.85;
-    transition: transform 0.35s ease;
-  }
-
-  .acc-row.open .acc-chevron {
-    transform: rotate(180deg);
-  }
-
-  .acc-body {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease;
-  }
-
-  .acc-body-inner {
-    padding: 2px 18px 20px 18px;
-  }
-
-  .acc-line {
-    width: 40px;
-    height: 1px;
-    background: var(--gold);
-    opacity: 0.5;
-    margin: 0 0 12px;
-  }
-
-  .acc-text-body {
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: rgba(240,230,210,0.92);
-    text-align: left;
-  }
-
-  .acc-ref {
-    font-size: 0.78rem;
-    color: rgba(201,162,75,0.8);
-    font-style: italic;
-    margin-top: 10px;
-    text-align: left;
-  }
-
-  .bar-close-hint {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    font-size: 0.56rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.55;
-  }
-
-  /* elementos base reutilizados en la tarjeta especial (intro / estudio) */
-  .temple-icon {
-    display: block;
-    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4));
-  }
-
-  .front-role {
-    font-size: 0.64rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 0.75;
-    margin-bottom: 5px;
-  }
-
-  .front-name {
-    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
-    font-size: 1.08rem;
-    letter-spacing: 0.02em;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  .front-tap {
-    text-align: center;
-    font-size: 0.6rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    opacity: 0.4;
-  }
-
-  /* tarjeta especial: icono grande y centrado (intro / estudio) */
-  .face-front.special-face {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 28px 22px;
-    background: radial-gradient(circle at 50% 38%, #2c2110 0%, #150f08 78%);
-    gap: 6px;
-  }
-
-  .special-face .temple-icon {
-    width: 40%;
-    max-width: 120px;
-    margin: 0 0 20px;
-  }
-
-  .special-face .front-name {
-    font-size: 1.15rem;
-  }
-
-  .special-face .front-role {
-    margin-bottom: 0;
-  }
-
-  .special-face .front-tap {
-    position: static;
-    margin-top: 20px;
-    padding-top: 0;
-  }
-
-  .special-intro-text {
-    font-size: 1.05rem;
-    line-height: 1.65;
-    color: rgba(240,230,210,0.92);
-    text-align: center;
-    max-width: 360px;
-    margin: 16px 0 0;
-  }
-
-  .special-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 6px;
-    padding: 12px 22px;
-    border: 1px solid rgba(201,162,75,0.55);
-    border-radius: 999px;
-    opacity: 1;
-    font-size: 0.74rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    line-height: 1;
-  }
-  .special-cta .chev {
-    display: inline-block;
-    animation: nudge 1.6s ease-in-out infinite;
-  }
-
-  .back-special {
-    background: linear-gradient(160deg, #2c2110 0%, #17120a 60%, #100c06 100%);
-  }
-
-  .study-face {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 36px 26px;
-    gap: 10px;
-    background: linear-gradient(160deg, #2c2110 0%, #17120a 60%, #100c06 100%);
-  }
-
-  .study-face .back-text {
-    text-align: center;
-    font-size: 1.05rem;
-    line-height: 1.65;
-    max-width: 380px;
-  }
-
-  .study-cta-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
-  }
-
-  .study-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 18px;
-    border: 1px solid rgba(201,162,75,0.55);
-    border-radius: 999px;
-    color: var(--gold-bright);
-    text-decoration: none;
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    transition: background 0.2s;
-    background: transparent;
-    font-family: 'Georgia', 'Iowan Old Style', serif;
-    cursor: pointer;
-  }
-  .study-link:hover { background: rgba(201,162,75,0.15); }
-
-  .study-link-secondary {
-    opacity: 0.85;
-  }
-
-  /* ---- tarjeta de portada ---- */
-  .cover-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 18px;
-    box-shadow: 0 24px 48px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(201,162,75,0.32);
-    background: radial-gradient(ellipse at 50% 22%, #241a10 0%, #120d08 72%);
-    padding: 40px 24px 34px;
-    cursor: pointer;
-  }
-
-  .cover-icon {
-    width: 68px;
-    height: 68px;
-    margin-bottom: 16px;
-    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4));
-  }
-
-  .cover-eyebrow {
-    font-size: 0.62rem;
-    letter-spacing: 0.28em;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.85;
-    margin-bottom: 8px;
-  }
-
-  .cover-dates {
-    font-size: 0.78rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--gold-bright);
-    margin-bottom: 16px;
-  }
-
-  .cover-quote {
-    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
-    font-weight: 400;
-    font-size: clamp(1.35rem, 6.4vw, 1.7rem);
-    line-height: 1.32;
-    color: var(--gold-bright);
-    margin: 0 0 22px;
-    text-shadow: 0 0 20px rgba(201,162,75,0.18);
-  }
-
-  .cover-text {
-    font-size: 0.88rem;
-    line-height: 1.62;
-    color: rgba(240,230,210,0.92);
-    text-align: left;
-    margin-bottom: 0;
-  }
-  .cover-text p { margin: 0 0 14px; }
-  .cover-text p:last-child { margin-bottom: 0; }
-
-  .cover-cta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    line-height: 1;
-    gap: 6px;
-    margin-top: 20px;
-    padding: 12px 22px;
-    border: 1px solid rgba(201,162,75,0.55);
-    border-radius: 999px;
-    color: var(--gold-bright);
-    font-size: 0.72rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-  }
-  .cover-cta .chev {
-    display: inline-block;
-    animation: nudge 1.6s ease-in-out infinite;
-  }
-
-  @media (max-width: 640px) {
-    .cover-card {
-      justify-content: center;
-      padding: 24px 22px 18px;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .cover-icon {
-      width: 44px;
-      height: 44px;
-      margin-bottom: 6px;
-    }
-    .cover-eyebrow {
-      font-size: 0.68rem;
-      letter-spacing: 0.2em;
-      margin-bottom: 4px;
-    }
-    .cover-dates {
-      font-size: 0.8rem;
-      margin-bottom: 8px;
-    }
-    .cover-quote {
-      font-size: clamp(1.25rem, 5.8vw, 1.5rem);
-      line-height: 1.24;
-      margin: 0 0 12px;
-    }
-    .cover-text {
-      font-size: 0.94rem;
-      line-height: 1.42;
-      margin-bottom: 0;
-    }
-    .cover-text p {
-      margin: 0 0 8px;
-    }
-    .cover-cta {
-      font-size: 0.78rem;
-      padding: 11px 20px;
-      margin-top: 20px;
-    }
-  }
-
-  /* mobile: aprovechar el espacio de pantalla completa con letra más grande */
-  @media (max-width: 640px) {
-    .face-back {
-      padding: 40px 32px;
-      gap: 22px;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
-    }
-    .back-sub {
-      font-size: 1.05rem;
-      letter-spacing: 0.15em;
-    }
-    .back-title {
-      font-size: 2.6rem;
-      margin: 4px 0;
-    }
-    .back-line {
-      width: 64px;
-      height: 2px;
-      margin: 10px auto 16px;
-    }
-    .back-text {
-      font-size: 1.45rem;
-      line-height: 1.6;
-    }
-    .back-ref {
-      font-size: 1.12rem;
-      margin-top: 10px;
-    }
-    .next-hint {
-      margin-top: 26px;
-      padding: 18px 30px;
-      font-size: 1.02rem;
-      gap: 10px;
-    }
-    .special-intro-text {
-      font-size: 1.4rem;
-      line-height: 1.6;
-      max-width: none;
-    }
-    .special-cta {
-      font-size: 1.02rem;
-      padding: 18px 32px;
-      gap: 8px;
-    }
-    .study-face .back-text {
-      font-size: 1.45rem;
-      line-height: 1.6;
-      max-width: none;
-    }
-    .study-link {
-      font-size: 1.02rem;
-      padding: 17px 30px;
-    }
-    .study-cta-row {
-      gap: 16px;
-    }
-    .acc-icon {
-      width: 54px;
-      height: 54px;
-    }
-    .acc-name {
-      font-size: 1.4rem;
-    }
-    .acc-role {
-      font-size: 0.85rem;
-    }
-    .acc-text-body {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-    .acc-ref {
-      font-size: 0.92rem;
-    }
-  }
-
-  /* back faces */
-  .face-back {
-    transform: rotateY(180deg);
-    padding: 22px 18px 18px;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .back-photo { background: linear-gradient(160deg, #2a2018 0%, #17110b 60%, #100c08 100%); }
-
-  .back-sub {
-    text-align: center;
-    font-size: 0.62rem;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--gold);
-    opacity: 0.78;
-  }
-
-  .back-title {
-    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
-    text-align: center;
-    font-size: 1.08rem;
-    letter-spacing: 0.03em;
-    color: var(--gold-bright);
-    margin: 0;
-  }
-
-  .back-line {
-    width: 36px;
-    height: 1px;
-    background: var(--gold);
-    opacity: 0.5;
-    margin: 3px auto 5px;
-  }
-
-  .back-text {
-    font-size: 1.05rem;
-    line-height: 1.65;
-    color: rgba(240,230,210,0.9);
-    text-align: left;
-  }
-
-  .back-ref {
-    text-align: center;
-    font-size: 0.68rem;
-    color: rgba(201,162,75,0.75);
-    font-style: italic;
-    margin-top: 2px;
-  }
-
-  .next-hint {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    line-height: 1;
-    gap: 8px;
-    margin-top: 8px;
-    padding: 9px 14px;
-    border: 1px solid rgba(201,162,75,0.45);
-    border-radius: 999px;
-    font-size: 0.66rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--gold-bright);
-    background: rgba(201,162,75,0.08);
-    align-self: center;
-    transition: background 0.2s, transform 0.2s;
-  }
-  .next-hint:hover { background: rgba(201,162,75,0.18); transform: translateY(-1px); }
-  .next-hint .chev {
-    display: inline-block;
-    animation: nudge 1.6s ease-in-out infinite;
-  }
-  @keyframes nudge {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(4px); }
-  }
-  .next-hint.is-last { opacity: 0.55; cursor: default; }
-  .next-hint.is-last .chev { animation: none; }
-
-  footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 0.68rem;
-    letter-spacing: 0.08em;
-    color: rgba(240,230,210,0.35);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .card { transition: none; }
-    .next-hint .chev { animation: none; }
-    .acc-chevron { transition: none; }
-    .acc-body { transition: none; }
+  :root{
+    --night-deep:#0d0b08;
+    --night-mid:#1c150e;
+    --night-panel:#221a11;
+    --parchment:#e8ddc7;
+    --parchment-dim:#b8a888;
+    --gold:#c99a4e;
+    --gold-bright:#e0b563;
+    --wine:#7a5230;
+    --wine-bright:#9c714a;
+    --line:rgba(232,221,199,0.14);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--night-deep);
+    color:var(--parchment);
+    font-family:'Frank Ruhl Libre', serif;
+    min-height:100vh;
+    position:relative;
+    overflow-x:hidden;
+  }
+
+  /* Warm vignette background */
+  #stars{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    background:
+      radial-gradient(ellipse 60% 40% at 50% 8%, rgba(201,154,78,0.14), transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(122,82,48,0.08), transparent 55%),
+      linear-gradient(180deg, var(--night-mid) 0%, var(--night-deep) 45%, var(--night-deep) 100%);
+  }
+  .star{
+    position:fixed; border-radius:50%; background:var(--parchment);
+    opacity:0.15; z-index:0; pointer-events:none;
+    animation:twinkle 4s ease-in-out infinite;
+  }
+  @keyframes twinkle{
+    0%,100%{opacity:0.12;}
+    50%{opacity:0.65;}
+  }
+
+  .wrap{
+    position:relative; z-index:1;
+    max-width:760px; margin:0 auto;
+    padding:48px 20px 80px;
+  }
+
+  header.top{
+    text-align:center; margin-bottom:40px;
+  }
+  h1.title{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:clamp(32px,7.2vw,54px);
+    margin:0 0 20px;
+    color:var(--parchment);
+    letter-spacing:0.005em;
+    line-height:1.15;
+  }
+  .subtitle-main{
+    color:var(--parchment-dim);
+    font-size:clamp(17px,4.4vw,20px);
+    max-width:540px; margin:0 auto 16px;
+    line-height:1.75;
+    font-weight:300;
+  }
+  .subtitle-invite{
+    color:var(--gold-bright);
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:clamp(21px,5.4vw,26px);
+    margin:0;
+  }
+
+  /* Progress: five lamps for the five questions */
+  .lamps{
+    display:flex; justify-content:center; gap:14px;
+    margin:36px 0 8px;
+  }
+  .lamp{
+    width:9px; height:9px; border-radius:50%;
+    background:rgba(232,221,199,0.18);
+    border:1px solid rgba(232,221,199,0.25);
+    transition:all .5s ease;
+  }
+  .lamp.lit{
+    background:var(--gold-bright);
+    border-color:var(--gold-bright);
+    box-shadow:0 0 10px 2px rgba(224,181,99,0.55);
+  }
+
+  .card{
+    background:linear-gradient(180deg, var(--night-panel), var(--night-mid));
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:40px clamp(22px,5vw,52px);
+    position:relative;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,0.6);
+  }
+  .card::before{
+    content:"";
+    position:absolute; left:0; top:24px; bottom:24px; width:2px;
+    background:linear-gradient(180deg, transparent, var(--gold), transparent);
+    opacity:0.6;
+  }
+
+  .instrument-tag{
+    display:flex; justify-content:center; align-items:center;
+    margin-bottom:22px;
+  }
+  .instrument-tag svg{
+    width:42px; height:42px;
+    color:var(--gold-bright);
+  }
+
+  .step-q{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    font-size:clamp(23px,5.6vw,32px);
+    line-height:1.4;
+    margin:0 0 26px;
+    color:var(--parchment);
+  }
+  .step-q em{ font-style:italic; color:var(--gold-bright); }
+  .step-hint{
+    font-size:15px; color:var(--parchment-dim); margin-top:-16px; margin-bottom:24px; font-weight:300; line-height:1.6;
+  }
+
+  input[type="text"]{
+    width:100%;
+    background:rgba(13,11,8,0.5);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:15px 16px;
+    color:var(--parchment);
+    font-family:'Frank Ruhl Libre', serif;
+    font-size:17px;
+    margin-bottom:14px;
+    transition:border-color .2s ease, background .2s ease;
+  }
+  input[type="text"]:focus{
+    outline:none;
+    border-color:var(--gold);
+    background:rgba(13,11,8,0.75);
+  }
+  input[type="text"]::placeholder{ color:rgba(232,221,199,0.32); }
+
+  .field-group{ display:flex; flex-direction:column; gap:0; }
+  .field-tag{
+    font-family:'Space Mono', monospace;
+    font-size:11px; color:var(--parchment-dim); letter-spacing:0.06em;
+    margin:0 0 6px 2px;
+  }
+
+  .actions{
+    display:flex; justify-content:space-between; align-items:center;
+    margin-top:30px; gap:12px;
+  }
+  button{
+    font-family:'Space Mono', monospace;
+    letter-spacing:0.06em;
+    font-size:13px;
+    border-radius:3px;
+    padding:14px 22px;
+    cursor:pointer;
+    border:1px solid transparent;
+    transition:all .2s ease;
+  }
+  .btn-primary{
+    background:var(--gold);
+    color:var(--night-deep);
+    font-weight:700;
+    border-color:var(--gold);
+    margin-left:auto;
+  }
+  .btn-primary:hover{ background:var(--gold-bright); border-color:var(--gold-bright); }
+  .btn-primary:disabled{ opacity:0.35; cursor:not-allowed; }
+  .btn-ghost{
+    background:transparent;
+    color:var(--parchment-dim);
+    border-color:var(--line);
+  }
+  .btn-ghost:hover{ color:var(--parchment); border-color:var(--parchment-dim); }
+  .btn-ghost:disabled{ opacity:0; pointer-events:none; }
+
+  .error-msg{
+    color:var(--wine-bright);
+    font-family:'Space Mono', monospace;
+    font-size:12.5px;
+    margin-top:-8px; margin-bottom:16px;
+    display:none;
+  }
+
+  /* Loading state */
+  .loading-wrap{ text-align:center; padding:36px 0; }
+  .loading-wrap .step-q{ margin-bottom:10px; }
+  .candle{
+    width:2px; height:46px; margin:22px auto 0;
+    background:linear-gradient(180deg, var(--gold-bright), var(--wine));
+    position:relative;
+    animation:flicker 1.6s ease-in-out infinite;
+    border-radius:2px;
+  }
+  @keyframes flicker{
+    0%,100%{ opacity:0.5; transform:scaleY(1); }
+    50%{ opacity:1; transform:scaleY(1.08); }
+  }
+
+  /* Result */
+  .result{ text-align:center; }
+  .superscription{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-size:15px;
+    letter-spacing:0.03em;
+    color:var(--parchment-dim);
+    line-height:1.7;
+    margin:0 0 26px;
+  }
+  .superscript-divider{
+    width:44px; height:1px; background:var(--line);
+    margin:0 auto 26px;
+  }
+  .psalm-verse{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    font-weight:500;
+    font-size:clamp(21px,5.6vw,27px);
+    line-height:1.85;
+    color:var(--parchment);
+    margin:0 0 26px;
+    white-space:pre-line;
+  }
+  .result-divider{
+    width:60px; height:1px; background:var(--gold);
+    margin:8px auto 30px; opacity:0.6;
+  }
+  .result-meta{
+    font-family:'Space Mono', monospace;
+    font-size:11px; color:var(--parchment-dim);
+    letter-spacing:0.06em; text-transform:uppercase;
+    margin-bottom:36px;
+    line-height:1.8;
+  }
+  .result-meta span{ color:var(--gold); }
+
+  footer.foot{
+    text-align:center; margin-top:40px;
+    font-family:'Space Mono', monospace;
+    font-size:11px; color:rgba(232,221,199,0.35);
+    letter-spacing:0.05em;
+  }
+
+  @media (max-width:520px){
+    .card{ padding:32px 20px; }
+    .actions{ flex-wrap:wrap; }
   }
 </style>
 </head>
 <body>
-<div class="rj-page">
+
+<div id="stars"></div>
+
 <div class="wrap">
+  <header class="top">
+    <h1 class="title">La poesía hebrea: un amigo a conocer</h1>
+    <p class="subtitle-main">Como David, podemos usar la música como medio para expresar cómo nos sentimos en este momento. Con unos pocos elementos podemos crear nuestro propio salmo.</p>
+    <p class="subtitle-invite">¿Te apuntas?</p>
+  </header>
 
-  <section class="category">
-    <div class="grid grid-cover" id="grid-cover"></div>
-  </section>
+  <div class="lamps" id="lamps">
+    <div class="lamp" data-i="0"></div>
+    <div class="lamp" data-i="1"></div>
+    <div class="lamp" data-i="2"></div>
+    <div class="lamp" data-i="3"></div>
+    <div class="lamp" data-i="4"></div>
+  </div>
 
+  <div class="card" id="card"></div>
 
-  <section class="category">
-    <div class="grid grid-photo" id="grid-photo"></div>
-  </section>
-
-  <section class="category">
-    <div class="grid grid-special" id="grid-intro"></div>
-  </section>
-
-  <section class="category" id="section-leaders">
-    <div class="cat-head cat-leaders">
-      <h2>Otros líderes de Judá</h2>
-      <div class="line"></div>
-    </div>
-    <div class="list-compact" id="grid-leaders"></div>
-  </section>
-
-  <section class="category">
-    <div class="cat-head cat-kings">
-      <h2>Funcionarios gentiles</h2>
-      <div class="line"></div>
-    </div>
-    <div class="list-compact" id="grid-kings"></div>
-  </section>
-
-  <section class="category">
-    <div class="cat-head cat-enemies">
-      <h2>Enemigos de Israel</h2>
-      <div class="line"></div>
-    </div>
-    <div class="list-compact" id="grid-enemies"></div>
-  </section>
-
-  <section class="category">
-    <div class="grid grid-special" id="grid-study"></div>
-  </section>
-
-  <footer>Esdras 1&ndash;7 &middot; Nehemías 2, 4&ndash;6, 8</footer>
-</div>
+  <footer class="foot">Un ejercicio de poesía bíblica &mdash; inspirado en los Salmos de David</footer>
 </div>
 
 <script>
-const TEMPLE_ICON = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqtXy2ICAJ21ldPRa5F6GlVW_VtnRVYqfEk02al2pJdM5Xb1ccl-XuSgO0FNxVGvlLi-sWsTQAwJ99mxJ3RqatpM0R5zgTognt-zDSAvglv3EkDVvOi0omX73HtZ_0lZ4kjUlEtElOBf_3GNIzvKgTrehrucgNltO9Dmhq6xrisc4phvu7kAh8Op9ldvA/s1800/Temple%20Icon.png";
+// ---------- Starfield ----------
+(function(){
+  const container = document.getElementById('stars');
+  const count = 60;
+  for(let i=0;i<count;i++){
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random()*2 + 1;
+    s.style.width = size+'px';
+    s.style.height = size+'px';
+    s.style.left = Math.random()*100+'vw';
+    s.style.top = Math.random()*100+'vh';
+    s.style.animationDelay = (Math.random()*4)+'s';
+    document.body.appendChild(s);
+  }
+})();
 
-const photoSrc = {
-  zorobabel: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK9MqvzNbGXDl5YfGXKbQ57RVt8GzgKwN9DqVG-N2e7fqoMpiO9_gIjsSuB6YooaoWTZ2FBIUAirmFVPY3ul9CMrut0mo3ftuoc9ocaffGbzKe5TsmgJCkNG_E1USy_jAyYrYtSy2ZB39-czS4ndero9qXbUp2SA5iu0Vi_8tezgb6c6yL_cJnA8pEIxc/s1800/2.jpg",
-  esdras: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN7j8UMyGiFYtm34E8C8U4RxzyEk3SpcvuVMqSePY9w3yT_EDW5A02dc2UuGyrjlbwi0Ak4Ux7DETg8kNjcr0vJ3P_4bL3st4DADB3NxydXvrQnjFRffWSGMfBopc0RN3oR3FBnqq8qV8jwSPtThfgwBICqx2u5GqbFSqnK8yD_pHYC2G050vz8hl3Gq8/s1800/3.jpg",
-  nehemias: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQC47MxDKK-8mrHec2Tg3tBHIua0Y-3tGtQQE3fehjjObz4ON6Tp6bzZ6Oc964tF8zelMwEsqsz5ohLJBrTO33ayh6oe9DOXR9nN3v5ftKgEidjDMI6H_OKSoEQI1hDvM07tAyev3vEt1MVwaCRTq3yNG_3XvEyCmKdCrTCgvbYImhBgtdeC5RGdU2oU/s1800/4.jpg",
-  zacarias: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJFwjOBn-0dUQScCYvstiwL1i4HJ7UrXcybhFwE2CBbHf8aTIT8lt30WN1FAypODx6Nw64xXPZfAQUSsond3AQVjbS5Z8c5lHNvYe1TNxvZN7V-IFENPzUTPZG5bbofzfzJ8EGbfcziUzNdAOyoUHQ8fiTDX3l8J7Ch31MeO2P7-JNxdLeVbWXRk9DfdI/s1800/5.jpg",
-  ciro: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgahw8xhwf5cdx0EzRiOkOeLq7F95mB1aN2wyFy4w4LV6_X90pK680KVtGV9HHlWCEJOHHETjr6UMFpXGhjhwIr4zjZ26NqAFGejCdFgoWGcaImiDhOcI3U5PmIt4RO4aaBBFQ5ZK7Iy7UTBO0GJqOTZwBbVZgWPUHTx4h_1XF3zJmwD1iV9jOI_6oCZxI/s1800/1.jpg",
-  dario: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC-MoVc-lSovS5neauFVTbm7ZY1FFUjQGDVydfEfHOwz05-c5bBXA64Sr-68xaavYNytRYAPYvD7MJmdDN3pzsTBhVLy07fGEmAuJiGYVtRcAzEnmt5RRBB7DBbiYHwf1n5MOp7u1q3ts-TgpQSVx6g3arJ22n_gBr6HKGo1iKca6BLdfFYu-BzzH603c/s1800/6.jpg",
-  nabucodonosor: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8q557ToyOL4Vl_GqFvAwmfD0Ovfg_fSFgA_sUWWO_4jvitHfy9d3La6aq5fgjCNu35XGxCpFtqEF2o2-4mgyBnDtG-8OEgd5NFdqTF3BtOcUIXzscJ8MtJiW5QEVz4Lrp1z55MtJF-5R_-2N5iuT3RJ6Wbfztwbtd_jLYF9E1JdvER5W0madkyfV9REQ/s1800/7.jpg",
-  artajerjes: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNwW-wAWSMUkplcpEkhgYc9HhpTJWKdhMzF0AMNogMG17hQXAxtuR_1-kRrnVzSQmMxReUkIeVjbC6Uv11zTsTwEalkUE4jsznlKx-fLCR6SCgUpesVCtYape0c8KqU_vW61li2m4skbbRcpLUGjRzOA42PEMJqxkm1xKjW7DNhodsMXKlKnZP8o4rsXA/s1800/Artajerjes.jpg",
+// ---------- API config ----------
+// Pega aquí la URL de tu Cloudflare Worker una vez desplegado, ej:
+// "https://taller-salmos-api.tu-usuario.workers.dev"
+// Si se deja vacío, el salmo se compone localmente con plantillas (sin IA en vivo).
+const API_ENDPOINT = "https://salmos.marvinzuniga2207.workers.dev/";
+
+const INSTRUMENTS = ['Arpa', 'Salterio', 'Pandero', 'Címbalo'];
+
+const ICONS = {
+  Arpa: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 6 C24 4 31 11 31 20 L31 40"/>
+    <path d="M15 6 L11 42"/>
+    <path d="M11 42 L31 40"/>
+    <line x1="15" y1="10.5" x2="28" y2="14.5"/>
+    <line x1="14" y1="16.5" x2="29" y2="19.5"/>
+    <line x1="13" y1="22.5" x2="30" y2="25"/>
+    <line x1="12" y1="28.5" x2="30.5" y2="30"/>
+    <line x1="11.5" y1="34.5" x2="30.8" y2="35"/>
+  </svg>`,
+  Salterio: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M9 15 L38 10 L40 33 L11 38 Z"/>
+    <line x1="12.5" y1="18" x2="37" y2="13.5"/>
+    <line x1="13" y1="23" x2="38" y2="18.5"/>
+    <line x1="13.5" y1="28" x2="38.5" y2="23.5"/>
+    <line x1="14" y1="33" x2="39" y2="28.5"/>
+  </svg>`,
+  Pandero: `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+    <circle cx="24" cy="24" r="15.5"/>
+    <circle cx="24" cy="7.5" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="40.5" cy="24" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="24" cy="40.5" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="7.5" cy="24" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="35" cy="13" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="35" cy="35" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="13" cy="35" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="13" cy="13" r="1.8" fill="currentColor" stroke="none"/>
+  </svg>`,
+  'Címbalo': `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="18" cy="24" rx="14.5" ry="9" transform="rotate(-18 18 24)"/>
+    <ellipse cx="30" cy="24" rx="14.5" ry="9" transform="rotate(18 30 24)"/>
+    <circle cx="18" cy="24" r="1.8" fill="currentColor" stroke="none"/>
+    <circle cx="30" cy="24" r="1.8" fill="currentColor" stroke="none"/>
+  </svg>`
 };
 
-// Orden solicitado
-const photoData = [
+// ---------- State machine ----------
+const state = {
+  step: 0, // 0..4 = preguntas, 5 = componiendo, 6 = resultado
+  nombre: '',
+  personaje: '',
+  atributos: ['', '', ''],
+  sentimientos: ['', '', ''],
+  necesidades: ['', ''],
+  salmo: '',
+  superscript: ''
+};
+
+const steps = [
   {
-    key: "zorobabel", name: "Zorobabel", role: "Líder de los repatriados",
-    text: "Líder de los judíos repatriados que dirigió la reconstrucción del altar y del templo. Bajo su liderazgo se echaron los cimientos del templo y se organizó el trabajo con maestros y albañiles.",
-    ref: "Esdras 3:2, 8"
+    key:'nombre',
+    q: () => '¿Cuál es tu nombre?',
+    hint: () => 'Así firmaremos tu salmo, como los salmos de David llevan su nombre.',
+    render: () => `
+      <input type="text" id="in-nombre" placeholder="Ej: María, Diego..." value="${escapeAttr(state.nombre)}" autocomplete="off">
+    `,
+    read: () => { state.nombre = val('in-nombre'); },
+    valid: () => state.nombre.trim().length > 0
   },
   {
-    key: "esdras", name: "Esdras", role: "Escriba y sacerdote",
-    text: "Escriba y sacerdote que guio a los exiliados, enseñó la ley de Moisés y la leyó públicamente al pueblo. Aunque llegó después de terminado el templo, fortaleció espiritualmente al pueblo para que lo valorara y mantuviera.",
-    ref: "Esdras 7:6; Nehemías 8:1–3"
+    key:'personaje',
+    q: () => '¿En quién quieres pensar al escribir tu salmo?',
+    hint: () => 'Puede ser Dios, Jesucristo, una persona real, o alguien que llevas en el corazón.',
+    render: () => `
+      <input type="text" id="in-personaje" placeholder="Ej: Jesucristo, mi madre, un amigo..." value="${escapeAttr(state.personaje)}" autocomplete="off">
+    `,
+    read: () => { state.personaje = val('in-personaje'); },
+    valid: () => state.personaje.trim().length > 0
   },
   {
-    key: "nehemias", name: "Nehemías", role: "Copero y gobernador",
-    text: "Copero del rey que obtuvo permiso para reconstruir los muros de Jerusalén y guio al pueblo pese a la oposición. Al proteger la ciudad con muros, aseguró un entorno seguro para el templo ya reconstruido.",
-    ref: "Nehemías 2:5"
+    key:'atributos',
+    q: () => `Si tuvieras que describir a <em>${escapeHtml(state.personaje)}</em> con tres atributos, ¿cuáles elegirías?`,
+    hint: () => 'Cualidades que lo describen — ej: fiel, fuerte, paciente.',
+    render: () => `
+      <div class="field-group">
+        <div class="field-tag">Atributo 1</div>
+        <input type="text" id="in-atr-0" placeholder="Ej: fiel" value="${escapeAttr(state.atributos[0])}" autocomplete="off">
+        <div class="field-tag">Atributo 2</div>
+        <input type="text" id="in-atr-1" placeholder="Ej: fuerte" value="${escapeAttr(state.atributos[1])}" autocomplete="off">
+        <div class="field-tag">Atributo 3</div>
+        <input type="text" id="in-atr-2" placeholder="Ej: paciente" value="${escapeAttr(state.atributos[2])}" autocomplete="off">
+      </div>
+    `,
+    read: () => { state.atributos = [val('in-atr-0'), val('in-atr-1'), val('in-atr-2')]; },
+    valid: () => state.atributos.every(a => a.trim().length > 0)
   },
   {
-    key: "zacarias", name: "Zacarías", role: "Profeta",
-    text: "Profeta que, junto a Hageo, animó al pueblo a reanudar la construcción del templo tras el retraso. Su mensaje motivó a Zorobabel y Jesúa a retomar la obra que había quedado detenida.",
-    ref: "Esdras 5:1"
+    key:'sentimientos',
+    q: () => `Cuando piensas en <em>${escapeHtml(state.personaje)}</em>, ¿qué tres sentimientos vienen a tu mente?`,
+    hint: () => 'Ej: paz, gratitud, nostalgia, esperanza.',
+    render: () => `
+      <div class="field-group">
+        <div class="field-tag">Sentimiento 1</div>
+        <input type="text" id="in-sen-0" placeholder="Ej: paz" value="${escapeAttr(state.sentimientos[0])}" autocomplete="off">
+        <div class="field-tag">Sentimiento 2</div>
+        <input type="text" id="in-sen-1" placeholder="Ej: gratitud" value="${escapeAttr(state.sentimientos[1])}" autocomplete="off">
+        <div class="field-tag">Sentimiento 3</div>
+        <input type="text" id="in-sen-2" placeholder="Ej: esperanza" value="${escapeAttr(state.sentimientos[2])}" autocomplete="off">
+      </div>
+    `,
+    read: () => { state.sentimientos = [val('in-sen-0'), val('in-sen-1'), val('in-sen-2')]; },
+    valid: () => state.sentimientos.every(s => s.trim().length > 0)
   },
   {
-    key: "ciro", name: "Ciro el Grande", role: "Rey de Persia",
-    text: "Rey de Persia que, inspirado por Dios, permitió a los judíos regresar a Jerusalén y devolvió los utensilios sagrados del templo. Su decreto hizo posible legal y materialmente la reconstrucción.",
-    ref: "Esdras 1:1–4, 7–8"
-  },
-  {
-    key: "dario", name: "Darío I", role: "Rey de Persia",
-    text: "Rey de Persia que confirmó el decreto de Ciro y permitió terminar la construcción del templo. Ordenó que se financiara la obra con fondos reales, asegurando su culminación.",
-    ref: "Esdras 6:1, 8"
-  },
-  {
-    key: "nabucodonosor", name: "Nabucodonosor", role: "Rey de Babilonia",
-    text: "Rey de Babilonia que destruyó Jerusalén y se llevó los utensilios del templo como botín. Su acción originó la necesidad misma de reconstruir el templo generaciones después.",
-    ref: "Esdras 1:7"
-  },
-  {
-    key: "artajerjes", name: "Artajerjes", role: "Rey de Persia",
-    text: "Rey de Persia que autorizó tanto el viaje de Esdras como el de Nehemías a Jerusalén. Proveyó recursos y autoridad que fortalecieron la vida religiosa en torno al templo ya construido.",
-    ref: "Esdras 7:1, 11; Nehemías 2:1"
+    key:'necesidades',
+    isLast:true,
+    q: () => '¿Qué dos asuntos ocupan hoy tu mente y tu corazón?',
+    hint: () => 'Lo que hoy más necesitas — ej: fuerza, claridad, descanso.',
+    render: () => `
+      <div class="field-group">
+        <div class="field-tag">Asunto 1</div>
+        <input type="text" id="in-nec-0" placeholder="Ej: fuerza" value="${escapeAttr(state.necesidades[0])}" autocomplete="off">
+        <div class="field-tag">Asunto 2</div>
+        <input type="text" id="in-nec-1" placeholder="Ej: claridad" value="${escapeAttr(state.necesidades[1])}" autocomplete="off">
+      </div>
+    `,
+    read: () => { state.necesidades = [val('in-nec-0'), val('in-nec-1')]; },
+    valid: () => state.necesidades.every(n => n.trim().length > 0)
   }
 ];
 
-const leadersData = [
-  {
-    name: "Jesúa", role: "Sumo sacerdote",
-    text: "Sumo sacerdote que trabajó junto a Zorobabel restaurando el culto y la obra del templo. Ayudó a edificar el altar de Jehová y a restablecer las ofrendas según la ley de Moisés.",
-    ref: "Esdras 3:2"
-  },
-  {
-    name: "Hageo", role: "Profeta",
-    text: "Profeta que, junto a Zacarías, animó al pueblo a reanudar la construcción del templo tras el retraso, motivando a Zorobabel y Jesúa a retomar la obra detenida.",
-    ref: "Esdras 5:1"
-  },
-  {
-    name: "Sesbasar", role: "Príncipe de Judá",
-    text: "Príncipe de Judá que recibió los utensilios del templo para llevarlos de regreso a Jerusalén. Su labor permitió que los objetos sagrados originales estuvieran disponibles para el culto restaurado.",
-    ref: "Esdras 1:8, 11"
-  }
-];
+function val(id){ return (document.getElementById(id)?.value || '').trim(); }
+function escapeAttr(s){ return String(s).replace(/"/g,'&quot;'); }
+function escapeHtml(s){
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
 
-const kingsData = [
-  {
-    name: "Tatnai", role: "Gobernador persa",
-    text: "Gobernador persa que investigó la obra del templo y luego apoyó su reconstrucción. Al consultar a Darío en vez de detener la obra, permitió que la construcción continuara sin interrupción.",
-    ref: "Esdras 5:3"
-  },
-  {
-    name: "Mitrídates", role: "Tesorero de Ciro",
-    text: "Tesorero de Ciro encargado de contar y entregar los utensilios sagrados a Sesbasar. Su labor administrativa aseguró que los objetos del templo regresaran íntegros a Jerusalén.",
-    ref: "Esdras 1:8"
-  }
-];
-
-const enemiesData = [
-  {
-    name: "Sanbalat", role: "Gobernador samaritano",
-    text: "Gobernador samaritano que se opuso, se burló y conspiró contra la obra de Nehemías. Su hostilidad hacia los muros reflejaba también resistencia a la restauración religiosa que el templo representaba.",
-    ref: "Nehemías 4:1"
-  },
-  {
-    name: "Tobías", role: "Funcionario amonita",
-    text: "Funcionario amonita aliado de Sanbalat en las burlas y amenazas contra la reconstrucción. Intentó desalentar al pueblo, poniendo a prueba su determinación de completar la obra sagrada.",
-    ref: "Nehemías 4:3"
-  },
-  {
-    name: "Gesem", role: "Líder árabe",
-    text: "Líder árabe que se unió a la conspiración contra Nehemías y la obra de los muros. Su oposición externa buscó frenar el fortalecimiento de Jerusalén como centro de adoración.",
-    ref: "Nehemías 6:1"
-  }
-];
-
-const coverData = {
-  eyebrow: "Antiguo Testamento 2026",
-  dates: "27 julio &ndash; 2 agosto",
-  quote: "Yo estoy ocupado en una gran obra",
-  paragraphs: [
-    "Después de 70 años de cautiverio en Babilonia, el pueblo de Judá estaba olvidando Jerusalén, el templo, y su convenio con Dios; no obstante, Dios no los había olvidado a ellos. Él había prometido por medio de Su profeta: &ldquo;Yo os visitaré y os cumpliré mi buena palabra de haceros volver&rdquo; (Jeremías 29:10).",
-    "Para cumplir Su promesa, el Señor levantó siervos entre Su pueblo y entre los gentiles para que realizaran &ldquo;una gran obra&rdquo;: hacer volver a Su pueblo a Jerusalén y, lo que es más importante, que volvieran a sus convenios."
-  ],
-  cta: "Toca aquí para conocerlos"
-};
-
-const introData = {
-  name: "Otros personajes",
-  role: "Voces secundarias, papel esencial",
-  text: "Otras personas tuvieron una participación más breve en la historia, pero cada uno participó, a su manera, en la restauración del pueblo, el templo o los muros de Jerusalén.",
-  ref: ""
-};
-
-const studyData = {
-  name: "Sigue Aprendiendo",
-  role: "Ven, sígueme · Antiguo Testamento 2026",
-  text: "Al igual que la obra de ellos, la nuestra tiene mucho que ver con la Casa del Señor, la ley del Señor y la protección espiritual que hallamos en Él.",
-  url: "leccion-yo-hago-una-gran-obra.html",
-  urlLabel: "Ver la lección"
-};
-
-// registro global de tarjetas en orden de aparición, para el boton "siguiente"
-const allCards = [];
-
-function makeNextHint(idx) {
-  const hint = document.createElement("div");
-  hint.className = "next-hint";
-  hint.innerHTML = `<span>Siguiente</span><span class="chev">&rsaquo;</span>`;
-  hint.addEventListener("click", (e) => {
-    e.stopPropagation();
-    goToNext(idx);
+function updateLamps(){
+  const lit = state.step >= 6 ? 5 : state.step;
+  document.querySelectorAll('.lamp').forEach((l,i)=>{
+    l.classList.toggle('lit', i < lit);
   });
-  return hint;
 }
 
-function goToNext(idx) {
-  const current = allCards[idx];
-  current.cardEl.classList.remove("flipped");
-  const next = allCards[idx + 1];
-  if (next) {
-    next.wrapEl.scrollIntoView({ behavior: "smooth", block: "center" });
-  } else {
-    const introSection = document.getElementById("grid-intro");
-    if (introSection) introSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
+function render(){
+  updateLamps();
+  const card = document.getElementById('card');
 
-function buildPhotoCard(item, idx) {
-  const wrap = document.createElement("div");
-  wrap.className = "card-wrap";
-  const loadAttr = idx === 0 ? `loading="eager" fetchpriority="high"` : `loading="lazy"`;
-  wrap.innerHTML = `
-    <div class="card">
-      <div class="face face-front photo">
-        <img src="${photoSrc[item.key]}" alt="${item.name}" ${loadAttr}>
-        <div class="front-caption">Toca para leer más</div>
+  if(state.step <= 4){
+    const s = steps[state.step];
+    const instrument = INSTRUMENTS[state.step % INSTRUMENTS.length];
+    card.innerHTML = `
+      <div class="instrument-tag">${ICONS[instrument]}</div>
+      <h2 class="step-q">${s.q()}</h2>
+      <div class="step-hint">${s.hint()}</div>
+      ${s.render()}
+      <div class="error-msg" id="error-msg">Por favor completa todos los campos antes de continuar.</div>
+      <div class="actions">
+        <button class="btn-ghost" id="btn-back" ${state.step===0?'disabled':''}>&larr; Atrás</button>
+        <button class="btn-primary" id="btn-next">${s.isLast ? 'Escribir mi salmo &rarr;' : 'Continuar &rarr;'}</button>
       </div>
-      <div class="face face-back back-photo">
-        <div class="back-sub">${item.role}</div>
-        <h3 class="back-title">${item.name}</h3>
-        <div class="back-line"></div>
-        <p class="back-text">${item.text}</p>
-        <p class="back-ref">${item.ref}</p>
+    `;
+    bindStepEvents(s);
+  } else if(state.step === 5){
+    card.innerHTML = `
+      <div class="loading-wrap">
+        <h2 class="step-q">Encendiendo la lámpara del poeta&hellip;</h2>
+        <div class="step-hint">Tejiendo tus palabras al estilo de los salmos de David.</div>
+        <div class="candle"></div>
       </div>
-    </div>
-  `;
-  const card = wrap.querySelector(".card");
-  const backFace = wrap.querySelector(".face-back");
-  backFace.appendChild(makeNextHint(idx));
-  wrap.addEventListener("click", () => card.classList.toggle("flipped"));
-  allCards.push({ wrapEl: wrap, cardEl: card });
-  return wrap;
-}
-
-function buildBarCard(item, catClass) {
-  const row = document.createElement("div");
-  row.className = "acc-row";
-  row.innerHTML = `
-    <div class="acc-header acc-${catClass}">
-      <img class="acc-icon" src="${TEMPLE_ICON}" alt="Templo" loading="lazy">
-      <div class="acc-text">
-        <div class="acc-name">${item.name}</div>
-        <div class="acc-role">${item.role}</div>
-      </div>
-      <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div class="acc-body">
-      <div class="acc-body-inner">
-        <div class="acc-line"></div>
-        <p class="acc-text-body">${item.text}</p>
-        <p class="acc-ref">${item.ref}</p>
-      </div>
-    </div>
-  `;
-
-  const body = row.querySelector(".acc-body");
-  const inner = row.querySelector(".acc-body-inner");
-
-  row.addEventListener("click", () => {
-    const isOpen = row.classList.toggle("open");
-    if (isOpen) {
-      body.style.maxHeight = inner.scrollHeight + "px";
-    } else {
-      body.style.maxHeight = "0px";
-    }
-  });
-
-  window.addEventListener("resize", () => {
-    if (row.classList.contains("open")) {
-      body.style.maxHeight = inner.scrollHeight + "px";
-    }
-  });
-
-  return row;
-}
-
-function buildSpecialCard(item) {
-  const wrap = document.createElement("div");
-  wrap.className = "card-wrap";
-  wrap.innerHTML = `
-    <div class="card">
-      <div class="face face-front special-face">
-        <img class="temple-icon" src="${TEMPLE_ICON}" alt="Templo" loading="lazy">
-        <p class="special-intro-text">${item.text}</p>
-        <div class="front-tap special-cta">Toca para conocerlos <span class="chev">&rsaquo;</span></div>
-      </div>
-    </div>
-  `;
-  wrap.addEventListener("click", () => {
-    const target = document.getElementById("section-leaders");
-    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-  return wrap;
-}
-
-function buildStudyCard(item) {
-  const wrap = document.createElement("div");
-  wrap.className = "card-wrap";
-  wrap.innerHTML = `
-    <div class="card">
-      <div class="face study-face">
-        <div class="back-sub">${item.role}</div>
-        <h3 class="back-title">${item.name}</h3>
-        <div class="back-line"></div>
-        <p class="back-text">${item.text}</p>
-        <div class="study-cta-row">
-          <a class="study-link" href="${item.url}" target="_blank" rel="noopener">${item.urlLabel} &rsaquo;</a>
-          <button type="button" class="study-link study-link-secondary" id="back-to-top">Volver al principio</button>
+    `;
+    generatePsalm();
+  } else if(state.step === 6){
+    card.innerHTML = `
+      <div class="result">
+        <div class="superscription">${escapeHtml(state.superscript).replace(/\n/g,'<br>')}</div>
+        <div class="superscript-divider"></div>
+        <div class="psalm-verse">${escapeHtml(state.salmo)}</div>
+        <div class="result-divider"></div>
+        <div class="result-meta">
+          <span>${escapeHtml(state.personaje)}</span><br>
+          ${state.atributos.map(escapeHtml).join(', ')}<br>
+          ${state.sentimientos.map(escapeHtml).join(', ')}<br>
+          ${state.necesidades.map(escapeHtml).join(' y ')}
+        </div>
+        <div class="actions" style="justify-content:center;">
+          <button class="btn-ghost" id="btn-restart">Escribir otro salmo</button>
         </div>
       </div>
-    </div>
-  `;
-  return wrap;
+    `;
+    document.getElementById('btn-restart').addEventListener('click', restart);
+  }
 }
 
-function buildCoverCard(item) {
-  const wrap = document.createElement("div");
-  wrap.className = "cover-card";
-  wrap.innerHTML = `
-    <img class="cover-icon" src="${TEMPLE_ICON}" alt="Templo">
-    <div class="cover-eyebrow">${item.eyebrow}</div>
-    <div class="cover-dates">${item.dates}</div>
-    <h1 class="cover-quote">${item.quote}</h1>
-    <div class="cover-text">${item.paragraphs.map(p => `<p>${p}</p>`).join("")}</div>
-    <div class="cover-cta"><span>${item.cta}</span><span class="chev">&rsaquo;</span></div>
-  `;
-  wrap.addEventListener("click", () => {
-    const firstCard = document.querySelector("#grid-photo .card-wrap");
-    if (firstCard) firstCard.scrollIntoView({ behavior: "smooth", block: "start" });
+function bindStepEvents(s){
+  document.getElementById('btn-next').addEventListener('click', () => {
+    s.read();
+    if(!s.valid()){
+      document.getElementById('error-msg').style.display = 'block';
+      return;
+    }
+    state.step++;
+    render();
   });
-  return wrap;
-}
-
-const gridPhoto = document.getElementById("grid-photo");
-const gridLeaders = document.getElementById("grid-leaders");
-const gridKings = document.getElementById("grid-kings");
-const gridEnemies = document.getElementById("grid-enemies");
-
-const gridCover = document.getElementById("grid-cover");
-const gridIntro = document.getElementById("grid-intro");
-const gridStudy = document.getElementById("grid-study");
-
-gridCover.appendChild(buildCoverCard(coverData));
-
-let idx = 0;
-photoData.forEach((item) => { gridPhoto.appendChild(buildPhotoCard(item, idx)); idx++; });
-gridIntro.appendChild(buildSpecialCard(introData));
-leadersData.forEach((item) => { gridLeaders.appendChild(buildBarCard(item, "leaders")); });
-kingsData.forEach((item) => { gridKings.appendChild(buildBarCard(item, "kings")); });
-enemiesData.forEach((item) => { gridEnemies.appendChild(buildBarCard(item, "enemies")); });
-gridStudy.appendChild(buildStudyCard(studyData));
-
-const backToTopBtn = document.getElementById("back-to-top");
-if (backToTopBtn) {
-  backToTopBtn.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const backBtn = document.getElementById('btn-back');
+  if(backBtn && !backBtn.disabled){
+    backBtn.addEventListener('click', () => {
+      s.read();
+      state.step--;
+      render();
+    });
+  }
+  document.querySelectorAll('#card input[type="text"]').forEach(inp => {
+    inp.addEventListener('keydown', (e) => {
+      if(e.key === 'Enter'){
+        e.preventDefault();
+        document.getElementById('btn-next').click();
+      }
+    });
   });
+  const firstInput = document.querySelector('#card input[type="text"]');
+  if(firstInput) firstInput.focus();
 }
+
+function restart(){
+  state.step = 0;
+  state.nombre = '';
+  state.personaje = '';
+  state.atributos = ['', '', ''];
+  state.sentimientos = ['', '', ''];
+  state.necesidades = ['', ''];
+  state.salmo = '';
+  state.superscript = '';
+  render();
+}
+
+// ---------- Local psalm composer (no external calls — works on any host) ----------
+function lc(w){ w = (w||'').trim(); return w ? w.charAt(0).toLowerCase() + w.slice(1) : w; }
+function cap(w){ w = (w||'').trim(); return w ? w.charAt(0).toUpperCase() + w.slice(1) : w; }
+function pick(arr){ return arr[Math.floor(Math.random()*arr.length)]; }
+function normalizeStr(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+
+// Lightweight Spanish gender heuristic so articles ("el/la", "del/de la", "este/esta") agree
+function gen(word){
+  const w = normalizeStr(word);
+  const excMasc = ['dia','mapa','planeta','problema','tema','sistema','clima','poema','idioma','programa','drama','fantasma','esquema','sofa'];
+  if(excMasc.includes(w)) return 'm';
+  if(/(cion|sion|dad|tud|umbre|eza|ncia|anza|ie)$/.test(w)) return 'f';
+  const excFemConsonant = ['paz','luz','fe','sed','miel','sal','vejez','ninez','flor','labor','razon','ley'];
+  if(excFemConsonant.includes(w)) return 'f';
+  if(/a$/.test(w)) return 'f';
+  return 'm';
+}
+function art(word){ return gen(word) === 'f' ? 'la' : 'el'; }
+function delArt(word){ return gen(word) === 'f' ? 'de la' : 'del'; }
+function dem(word){ return gen(word) === 'f' ? 'esta' : 'este'; }
+
+// Heuristic for the gender of the person the psalm is about (personaje) — kept
+// in case future templates need it; current templates avoid needing it at all
+// by only ever placing atributos after "eres" (predicate position), which is
+// grammatically valid no matter what word or gender the student types.
+function nameGender(name){
+  const n = normalizeStr(name).trim().split(/\s+/)[0] || '';
+  if(!n) return 'm';
+  const mascExceptions = ['josue','moises','elias','isaias','matias','tobias','jonas','lucas','andres','jesus','nicolas','ines'];
+  if(mascExceptions.includes(n)) return 'm';
+  if(n.endsWith('a')) return 'f';
+  return 'm';
+}
+
+// Detects whether the psalm is addressed to God / Jesucristo / Espíritu Santo,
+// which unlocks divine metaphors (roca, pastor, clamor). Anyone else is treated
+// at a human level, per the exercise's rules.
+function isDivine(personaje){
+  const n = normalizeStr(personaje);
+  const keywords = [
+    'dios','jehova','jesus','jesucristo','cristo','espiritu santo',
+    'padre celestial','elohim','yahve','yahweh','todopoderoso','el senor'
+  ];
+  return keywords.some(k => n.includes(k));
+}
+
+function makeSuperscript(d){
+  const instrumento = pick(INSTRUMENTS);
+  return `Al músico principal: con ${instrumento}.\nSalmo de ${cap(d.nombre)}.`;
+}
+
+// Every line is built so atributos (a1,a2,a3) ONLY ever follow "eres" / "Qué ... eres"
+// (predicate-adjective position). That's the one slot in Spanish where any word a
+// student types — adjective, participle, whatever gender — reads correctly.
+// Sentimientos and necesidades are safe as nouns, so those can vary more freely.
+function buildVerses(d){
+  const personaje = cap(d.personaje);
+  const [a1,a2,a3] = d.atributos.map(lc);
+  const [s1,s2,s3] = d.sentimientos.map(lc);
+  const [n1,n2] = d.necesidades.map(lc);
+  const divine = isDivine(d.personaje);
+
+  let v1Line1, v1Line2, v2Line1, v2Line2;
+
+  if(divine){
+    const v1L1 = [
+      `Tú eres ${a1}, ${a2} y ${a3}, oh ${personaje},`,
+      `Eres ${a1}, ${a2} y ${a3}, oh ${personaje}, mi Dios y mi pastor,`,
+      `Qué ${a1}, ${a2} y ${a3} eres, oh ${personaje},`,
+      `Cuán ${a1}, ${a2} y ${a3} eres, oh ${personaje},`
+    ];
+    const v1L2 = [
+      `hoy siento ${s1}, y en tu presencia esto se convierte en ${s2}.`,
+      `mi alma conoce ${art(s1)} ${s1}, y también ${s2} cuando pienso en ti.`,
+      `en medio ${delArt(s1)} ${s1}, tu fidelidad me regala ${s2}.`,
+      `camino hoy entre ${art(s1)} ${s1} y ${art(s2)} ${s2}, sabiendo que tú me guías.`
+    ];
+    const v2L1 = [
+      `Pongo delante de ti, oh ${personaje}, ${n1} y ${n2},`,
+      `Traigo ante ti, oh ${personaje}, ${n1} y ${n2},`,
+      `Levántate, oh ${personaje}, y ayúdame con ${n1} y ${n2},`,
+      `Escucha mi oración, oh ${personaje}, sobre ${n1} y ${n2},`
+    ];
+    const v2L2 = [
+      `pues hoy siento ${s3}, y en ti hallo mi fuerza.`,
+      `porque mi ${s3} se convierte en confianza cuando pienso en ti.`,
+      `y agradezco ${art(s3)} ${s3} que siento junto a ti.`,
+      `porque tu fidelidad acompaña ${art(s3)} ${s3} que hoy llevo.`
+    ];
+    v1Line1 = pick(v1L1); v1Line2 = pick(v1L2);
+    v2Line1 = pick(v2L1); v2Line2 = pick(v2L2);
+  } else {
+    const v1L1 = [
+      `Eres ${a1}, ${a2} y ${a3}, ${personaje},`,
+      `Tú eres ${a1}, ${a2} y ${a3}, ${personaje}, y eso nunca lo olvido,`,
+      `Qué ${a1}, ${a2} y ${a3} eres, ${personaje},`,
+      `Cuán ${a1}, ${a2} y ${a3} eres, ${personaje},`
+    ];
+    const v1L2 = [
+      `hoy siento ${s1}, y pensar en ti me trae ${s2}.`,
+      `mi corazón conoce ${art(s1)} ${s1}, y también ${s2} cuando estás cerca.`,
+      `en medio ${delArt(s1)} ${s1}, tu cercanía no se aparta de mí.`,
+      `entre ${art(s1)} ${s1} y ${art(s2)} ${s2}, pensar en ti me acompaña.`
+    ];
+    const v2L1 = [
+      `Hoy llevo en el corazón ${n1} y ${n2}, ${personaje},`,
+      `Pienso en ti junto con ${n1} y ${n2}, ${personaje},`,
+      `Te escribo pensando en ${n1} y ${n2}, ${personaje},`,
+      `Hoy comparto contigo ${n1} y ${n2}, ${personaje},`
+    ];
+    const v2L2 = [
+      `pues cuando pienso en ti, ${art(s3)} ${s3} se convierte en gratitud.`,
+      `y agradezco ${art(s3)} ${s3} que siento junto a ti.`,
+      `así como tu cercanía acompaña ${art(s3)} ${s3} que hoy llevo.`,
+      `porque pensar en ti transforma ${art(s3)} ${s3} en algo hermoso.`
+    ];
+    v1Line1 = pick(v1L1); v1Line2 = pick(v1L2);
+    v2Line1 = pick(v2L1); v2Line2 = pick(v2L2);
+  }
+
+  return `${v1Line1}\n${v1Line2}\n\n${v2Line1}\n${v2Line2}`;
+}
+
+async function generatePsalm(){
+  state.superscript = makeSuperscript(state);
+
+  if (API_ENDPOINT) {
+    try {
+      const res = await fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nombre: state.nombre,
+          personaje: state.personaje,
+          atributos: state.atributos,
+          sentimientos: state.sentimientos,
+          necesidades: state.necesidades
+        })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.salmo) {
+          state.salmo = data.salmo;
+          state.step = 6;
+          render();
+          return;
+        }
+      }
+    } catch (err) {
+      // sin conexión o el Worker no respondió — seguimos al respaldo local
+    }
+  }
+  // Respaldo local: nunca deja al estudiante sin salmo
+  setTimeout(() => {
+    state.salmo = buildVerses(state);
+    state.step = 6;
+    render();
+  }, 700);
+}
+
+render();
 </script>
+
 </body>
 </html>
