@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reconstructores de Jerusalén — Esdras y Nehemías</title>
+<meta name="description" content="Conoce a los personajes de Esdras y Nehemías: cómo influyeron en la reconstrucción del templo y los muros de Jerusalén. Antiguo Testamento, Ven, Sígueme 2026.">
+<meta name="theme-color" content="#0d0b08">
+<meta property="og:title" content="Reconstructores de Jerusalén">
+<meta property="og:description" content="Conoce a los personajes de Esdras y Nehemías y cómo influyeron en la reconstrucción del templo y los muros de Jerusalén.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%230d0b08'/%3E%3Cpath d='M20 82 L20 40 L28 40 L28 32 L36 32 L36 40 L44 40 L44 32 L52 32 L52 40 L60 40 L60 32 L68 32 L68 40 L76 40 L76 32 L84 32 L84 82 Z' fill='%23c9a24b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://blogger.googleusercontent.com">
+<style>
+  html {
+    scroll-behavior: smooth;
+    background: #0d0b08;
+    color-scheme: dark;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background: #0d0b08;
+  }
+
+  :root {
+    --bg-deep: #0d0b08;
+    --purple: #241a2e;
+    --purple-deep: #17121c;
+    --gold: #c9a24b;
+    --gold-bright: #e8c877;
+    --cream: #f0e6d2;
+    --enemy-red: #5a2222;
+    --enemy-bg: #1c1414;
+  }
+
+  * { box-sizing: border-box; }
+
+  .rj-page {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: radial-gradient(ellipse at top, #241c14 0%, var(--bg-deep) 55%);
+    font-family: 'Georgia', 'Iowan Old Style', serif;
+    color: var(--cream);
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 44px 16px 90px;
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+
+  header.hero {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+
+  .eyebrow {
+    letter-spacing: 0.32em;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.85;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    font-size: clamp(1.5rem, 6vw, 2.6rem);
+    margin: 0 0 10px;
+    color: var(--gold-bright);
+    text-shadow: 0 0 24px rgba(201,162,75,0.2);
+  }
+
+  .hero p {
+    max-width: 540px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: rgba(240,230,210,0.65);
+    font-style: italic;
+    padding: 0 8px;
+  }
+
+  .divider-orn {
+    width: 56px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+    margin: 20px auto 0;
+  }
+
+  section.category { margin-bottom: 56px; }
+
+  .cat-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .cat-head .line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, currentColor, transparent);
+    opacity: 0.4;
+  }
+
+  .cat-head h2 {
+    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
+    font-weight: 400;
+    font-size: clamp(0.95rem, 3.4vw, 1.1rem);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .cat-main { color: var(--gold-bright); }
+  .cat-leaders { color: var(--gold-bright); }
+  .cat-kings { color: #d9b96a; }
+  .cat-enemies { color: #c98a7a; }
+
+  /* --- grids --- */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 20px;
+  }
+
+  .grid-photo {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+  }
+
+  /* filas compactas: otros lideres, reyes/funcionarios, enemigos */
+  .list-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* tarjetas especiales: intro y estudio final, siempre centradas y solas */
+  .grid-special {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  /* tarjeta de portada: introduce toda la experiencia */
+  .grid-cover {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .grid-photo {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* --- card shell --- */
+  .card-wrap {
+    perspective: 1400px;
+  }
+
+  .grid-photo .card-wrap,
+  .grid-special .card-wrap { aspect-ratio: 3 / 4.3; }
+
+  @media (max-width: 640px) {
+    .grid-photo .card-wrap,
+    .grid-special .card-wrap,
+    .cover-card {
+      aspect-ratio: auto !important;
+      height: 100vh;
+      height: 100dvh;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    .grid-photo,
+    .grid-special,
+    .grid-cover {
+      gap: 0;
+    }
+    html {
+      scroll-snap-type: y proximity;
+    }
+    section.category:has(.grid-photo),
+    section.category:has(.grid-special),
+    section.category:has(.grid-cover) {
+      margin-bottom: 0;
+    }
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.85s cubic-bezier(.2,.8,.2,1);
+    cursor: pointer;
+  }
+
+  .card.flipped { transform: rotateY(180deg); }
+
+  .face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 22px 44px -16px rgba(0,0,0,0.65), 0 0 0 1px rgba(201,162,75,0.3);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* photo front (Ciro style) */
+  .face-front.photo {
+    background: radial-gradient(ellipse at 50% 40%, #1c1610 0%, #000 75%);
+    align-items: center;
+    justify-content: center;
+  }
+  .face-front.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+  .front-caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 16px 16px 13px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.88), rgba(0,0,0,0));
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    text-align: center;
+  }
+
+  /* ---- filas tipo acordeón (otros lideres / reyes / enemigos) ---- */
+  .acc-row {
+    border-radius: 14px;
+    box-shadow: 0 14px 28px -14px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,162,75,0.28);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .acc-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 18px;
+  }
+
+  .acc-leaders { background: radial-gradient(circle at 12% 30%, #33273f 0%, var(--purple-deep) 85%); }
+  .acc-kings { background: radial-gradient(circle at 12% 30%, #3a2c11 0%, #180f06 85%); }
+  .acc-enemies { background: radial-gradient(circle at 12% 30%, #4a2424 0%, var(--enemy-bg) 85%); }
+
+  .acc-icon {
+    flex: 0 0 auto;
+    width: 46px;
+    height: 46px;
+    display: block;
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4));
+  }
+
+  .acc-text {
+    flex: 1 1 auto;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .acc-name {
+    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
+    font-size: 1.15rem;
+    letter-spacing: 0.02em;
+    color: var(--gold-bright);
+    line-height: 1.25;
+  }
+
+  .acc-role {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--cream);
+    opacity: 0.75;
+    margin-top: 3px;
+  }
+
+  .acc-chevron {
+    flex: 0 0 auto;
+    width: 22px;
+    height: 22px;
+    color: var(--gold);
+    opacity: 0.85;
+    transition: transform 0.35s ease;
+  }
+
+  .acc-row.open .acc-chevron {
+    transform: rotate(180deg);
+  }
+
+  .acc-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .acc-body-inner {
+    padding: 2px 18px 20px 18px;
+  }
+
+  .acc-line {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+    margin: 0 0 12px;
+  }
+
+  .acc-text-body {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: rgba(240,230,210,0.92);
+    text-align: left;
+  }
+
+  .acc-ref {
+    font-size: 0.78rem;
+    color: rgba(201,162,75,0.8);
+    font-style: italic;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  .bar-close-hint {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 0.56rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.55;
+  }
+
+  /* elementos base reutilizados en la tarjeta especial (intro / estudio) */
+  .temple-icon {
+    display: block;
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4));
+  }
+
+  .front-role {
+    font-size: 0.64rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.75;
+    margin-bottom: 5px;
+  }
+
+  .front-name {
+    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
+    font-size: 1.08rem;
+    letter-spacing: 0.02em;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .front-tap {
+    text-align: center;
+    font-size: 0.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: 0.4;
+  }
+
+  /* tarjeta especial: icono grande y centrado (intro / estudio) */
+  .face-front.special-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 22px;
+    background: radial-gradient(circle at 50% 38%, #2c2110 0%, #150f08 78%);
+    gap: 6px;
+  }
+
+  .special-face .temple-icon {
+    width: 40%;
+    max-width: 120px;
+    margin: 0 0 20px;
+  }
+
+  .special-face .front-name {
+    font-size: 1.15rem;
+  }
+
+  .special-face .front-role {
+    margin-bottom: 0;
+  }
+
+  .special-face .front-tap {
+    position: static;
+    margin-top: 20px;
+    padding-top: 0;
+  }
+
+  .special-intro-text {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: rgba(240,230,210,0.92);
+    text-align: center;
+    max-width: 360px;
+    margin: 16px 0 0;
+  }
+
+  .special-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    padding: 12px 22px;
+    border: 1px solid rgba(201,162,75,0.55);
+    border-radius: 999px;
+    opacity: 1;
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .special-cta .chev {
+    display: inline-block;
+    animation: nudge 1.6s ease-in-out infinite;
+  }
+
+  .back-special {
+    background: linear-gradient(160deg, #2c2110 0%, #17120a 60%, #100c06 100%);
+  }
+
+  .study-face {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 36px 26px;
+    gap: 10px;
+    background: linear-gradient(160deg, #2c2110 0%, #17120a 60%, #100c06 100%);
+  }
+
+  .study-face .back-text {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.65;
+    max-width: 380px;
+  }
+
+  .study-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .study-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border: 1px solid rgba(201,162,75,0.55);
+    border-radius: 999px;
+    color: var(--gold-bright);
+    text-decoration: none;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    transition: background 0.2s;
+    background: transparent;
+    font-family: 'Georgia', 'Iowan Old Style', serif;
+    cursor: pointer;
+  }
+  .study-link:hover { background: rgba(201,162,75,0.15); }
+
+  .study-link-secondary {
+    opacity: 0.85;
+  }
+
+  /* ---- tarjeta de portada ---- */
+  .cover-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 24px 48px -20px rgba(0,0,0,0.7), 0 0 0 1px rgba(201,162,75,0.32);
+    background: radial-gradient(ellipse at 50% 22%, #241a10 0%, #120d08 72%);
+    padding: 40px 24px 34px;
+    cursor: pointer;
+  }
+
+  .cover-icon {
+    width: 68px;
+    height: 68px;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 6px 14px rgba(0,0,0,0.4));
+  }
+
+  .cover-eyebrow {
+    font-size: 0.62rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.85;
+    margin-bottom: 8px;
+  }
+
+  .cover-dates {
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    margin-bottom: 16px;
+  }
+
+  .cover-quote {
+    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
+    font-weight: 400;
+    font-size: clamp(1.35rem, 6.4vw, 1.7rem);
+    line-height: 1.32;
+    color: var(--gold-bright);
+    margin: 0 0 22px;
+    text-shadow: 0 0 20px rgba(201,162,75,0.18);
+  }
+
+  .cover-text {
+    font-size: 0.88rem;
+    line-height: 1.62;
+    color: rgba(240,230,210,0.92);
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .cover-text p { margin: 0 0 14px; }
+  .cover-text p:last-child { margin-bottom: 0; }
+
+  .cover-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    gap: 6px;
+    margin-top: 20px;
+    padding: 12px 22px;
+    border: 1px solid rgba(201,162,75,0.55);
+    border-radius: 999px;
+    color: var(--gold-bright);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .cover-cta .chev {
+    display: inline-block;
+    animation: nudge 1.6s ease-in-out infinite;
+  }
+
+  @media (max-width: 640px) {
+    .cover-card {
+      justify-content: center;
+      padding: 24px 22px 18px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .cover-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 6px;
+    }
+    .cover-eyebrow {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 4px;
+    }
+    .cover-dates {
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+    .cover-quote {
+      font-size: clamp(1.25rem, 5.8vw, 1.5rem);
+      line-height: 1.24;
+      margin: 0 0 12px;
+    }
+    .cover-text {
+      font-size: 0.94rem;
+      line-height: 1.42;
+      margin-bottom: 0;
+    }
+    .cover-text p {
+      margin: 0 0 8px;
+    }
+    .cover-cta {
+      font-size: 0.78rem;
+      padding: 11px 20px;
+      margin-top: 20px;
+    }
+  }
+
+  /* mobile: aprovechar el espacio de pantalla completa con letra más grande */
+  @media (max-width: 640px) {
+    .face-back {
+      padding: 40px 32px;
+      gap: 22px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .back-sub {
+      font-size: 1.05rem;
+      letter-spacing: 0.15em;
+    }
+    .back-title {
+      font-size: 2.6rem;
+      margin: 4px 0;
+    }
+    .back-line {
+      width: 64px;
+      height: 2px;
+      margin: 10px auto 16px;
+    }
+    .back-text {
+      font-size: 1.45rem;
+      line-height: 1.6;
+    }
+    .back-ref {
+      font-size: 1.12rem;
+      margin-top: 10px;
+    }
+    .next-hint {
+      margin-top: 26px;
+      padding: 18px 30px;
+      font-size: 1.02rem;
+      gap: 10px;
+    }
+    .special-intro-text {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      max-width: none;
+    }
+    .special-cta {
+      font-size: 1.02rem;
+      padding: 18px 32px;
+      gap: 8px;
+    }
+    .study-face .back-text {
+      font-size: 1.45rem;
+      line-height: 1.6;
+      max-width: none;
+    }
+    .study-link {
+      font-size: 1.02rem;
+      padding: 17px 30px;
+    }
+    .study-cta-row {
+      gap: 16px;
+    }
+    .acc-icon {
+      width: 54px;
+      height: 54px;
+    }
+    .acc-name {
+      font-size: 1.4rem;
+    }
+    .acc-role {
+      font-size: 0.85rem;
+    }
+    .acc-text-body {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .acc-ref {
+      font-size: 0.92rem;
+    }
+  }
+
+  /* back faces */
+  .face-back {
+    transform: rotateY(180deg);
+    padding: 22px 18px 18px;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .back-photo { background: linear-gradient(160deg, #2a2018 0%, #17110b 60%, #100c08 100%); }
+
+  .back-sub {
+    text-align: center;
+    font-size: 0.62rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--gold);
+    opacity: 0.78;
+  }
+
+  .back-title {
+    font-family: 'Trajan Pro', 'Cinzel', 'Georgia', serif;
+    text-align: center;
+    font-size: 1.08rem;
+    letter-spacing: 0.03em;
+    color: var(--gold-bright);
+    margin: 0;
+  }
+
+  .back-line {
+    width: 36px;
+    height: 1px;
+    background: var(--gold);
+    opacity: 0.5;
+    margin: 3px auto 5px;
+  }
+
+  .back-text {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: rgba(240,230,210,0.9);
+    text-align: left;
+  }
+
+  .back-ref {
+    text-align: center;
+    font-size: 0.68rem;
+    color: rgba(201,162,75,0.75);
+    font-style: italic;
+    margin-top: 2px;
+  }
+
+  .next-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 9px 14px;
+    border: 1px solid rgba(201,162,75,0.45);
+    border-radius: 999px;
+    font-size: 0.66rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold-bright);
+    background: rgba(201,162,75,0.08);
+    align-self: center;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .next-hint:hover { background: rgba(201,162,75,0.18); transform: translateY(-1px); }
+  .next-hint .chev {
+    display: inline-block;
+    animation: nudge 1.6s ease-in-out infinite;
+  }
+  @keyframes nudge {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(4px); }
+  }
+  .next-hint.is-last { opacity: 0.55; cursor: default; }
+  .next-hint.is-last .chev { animation: none; }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: rgba(240,230,210,0.35);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card { transition: none; }
+    .next-hint .chev { animation: none; }
+    .acc-chevron { transition: none; }
+    .acc-body { transition: none; }
+  }
+</style>
+</head>
+<body>
+<div class="rj-page">
+<div class="wrap">
+
+  <section class="category">
+    <div class="grid grid-cover" id="grid-cover"></div>
+  </section>
+
+
+  <section class="category">
+    <div class="grid grid-photo" id="grid-photo"></div>
+  </section>
+
+  <section class="category">
+    <div class="grid grid-special" id="grid-intro"></div>
+  </section>
+
+  <section class="category" id="section-leaders">
+    <div class="cat-head cat-leaders">
+      <h2>Otros líderes de Judá</h2>
+      <div class="line"></div>
+    </div>
+    <div class="list-compact" id="grid-leaders"></div>
+  </section>
+
+  <section class="category">
+    <div class="cat-head cat-kings">
+      <h2>Funcionarios gentiles</h2>
+      <div class="line"></div>
+    </div>
+    <div class="list-compact" id="grid-kings"></div>
+  </section>
+
+  <section class="category">
+    <div class="cat-head cat-enemies">
+      <h2>Enemigos de Israel</h2>
+      <div class="line"></div>
+    </div>
+    <div class="list-compact" id="grid-enemies"></div>
+  </section>
+
+  <section class="category">
+    <div class="grid grid-special" id="grid-study"></div>
+  </section>
+
+  <footer>Esdras 1&ndash;7 &middot; Nehemías 2, 4&ndash;6, 8</footer>
+</div>
+</div>
+
+<script>
+const TEMPLE_ICON = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqtXy2ICAJ21ldPRa5F6GlVW_VtnRVYqfEk02al2pJdM5Xb1ccl-XuSgO0FNxVGvlLi-sWsTQAwJ99mxJ3RqatpM0R5zgTognt-zDSAvglv3EkDVvOi0omX73HtZ_0lZ4kjUlEtElOBf_3GNIzvKgTrehrucgNltO9Dmhq6xrisc4phvu7kAh8Op9ldvA/s1800/Temple%20Icon.png";
+
+const photoSrc = {
+  zorobabel: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjK9MqvzNbGXDl5YfGXKbQ57RVt8GzgKwN9DqVG-N2e7fqoMpiO9_gIjsSuB6YooaoWTZ2FBIUAirmFVPY3ul9CMrut0mo3ftuoc9ocaffGbzKe5TsmgJCkNG_E1USy_jAyYrYtSy2ZB39-czS4ndero9qXbUp2SA5iu0Vi_8tezgb6c6yL_cJnA8pEIxc/s1800/2.jpg",
+  esdras: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhN7j8UMyGiFYtm34E8C8U4RxzyEk3SpcvuVMqSePY9w3yT_EDW5A02dc2UuGyrjlbwi0Ak4Ux7DETg8kNjcr0vJ3P_4bL3st4DADB3NxydXvrQnjFRffWSGMfBopc0RN3oR3FBnqq8qV8jwSPtThfgwBICqx2u5GqbFSqnK8yD_pHYC2G050vz8hl3Gq8/s1800/3.jpg",
+  nehemias: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibQC47MxDKK-8mrHec2Tg3tBHIua0Y-3tGtQQE3fehjjObz4ON6Tp6bzZ6Oc964tF8zelMwEsqsz5ohLJBrTO33ayh6oe9DOXR9nN3v5ftKgEidjDMI6H_OKSoEQI1hDvM07tAyev3vEt1MVwaCRTq3yNG_3XvEyCmKdCrTCgvbYImhBgtdeC5RGdU2oU/s1800/4.jpg",
+  zacarias: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJFwjOBn-0dUQScCYvstiwL1i4HJ7UrXcybhFwE2CBbHf8aTIT8lt30WN1FAypODx6Nw64xXPZfAQUSsond3AQVjbS5Z8c5lHNvYe1TNxvZN7V-IFENPzUTPZG5bbofzfzJ8EGbfcziUzNdAOyoUHQ8fiTDX3l8J7Ch31MeO2P7-JNxdLeVbWXRk9DfdI/s1800/5.jpg",
+  ciro: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgahw8xhwf5cdx0EzRiOkOeLq7F95mB1aN2wyFy4w4LV6_X90pK680KVtGV9HHlWCEJOHHETjr6UMFpXGhjhwIr4zjZ26NqAFGejCdFgoWGcaImiDhOcI3U5PmIt4RO4aaBBFQ5ZK7Iy7UTBO0GJqOTZwBbVZgWPUHTx4h_1XF3zJmwD1iV9jOI_6oCZxI/s1800/1.jpg",
+  dario: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhC-MoVc-lSovS5neauFVTbm7ZY1FFUjQGDVydfEfHOwz05-c5bBXA64Sr-68xaavYNytRYAPYvD7MJmdDN3pzsTBhVLy07fGEmAuJiGYVtRcAzEnmt5RRBB7DBbiYHwf1n5MOp7u1q3ts-TgpQSVx6g3arJ22n_gBr6HKGo1iKca6BLdfFYu-BzzH603c/s1800/6.jpg",
+  nabucodonosor: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8q557ToyOL4Vl_GqFvAwmfD0Ovfg_fSFgA_sUWWO_4jvitHfy9d3La6aq5fgjCNu35XGxCpFtqEF2o2-4mgyBnDtG-8OEgd5NFdqTF3BtOcUIXzscJ8MtJiW5QEVz4Lrp1z55MtJF-5R_-2N5iuT3RJ6Wbfztwbtd_jLYF9E1JdvER5W0madkyfV9REQ/s1800/7.jpg",
+  artajerjes: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNwW-wAWSMUkplcpEkhgYc9HhpTJWKdhMzF0AMNogMG17hQXAxtuR_1-kRrnVzSQmMxReUkIeVjbC6Uv11zTsTwEalkUE4jsznlKx-fLCR6SCgUpesVCtYape0c8KqU_vW61li2m4skbbRcpLUGjRzOA42PEMJqxkm1xKjW7DNhodsMXKlKnZP8o4rsXA/s1800/Artajerjes.jpg",
+};
+
+// Orden solicitado
+const photoData = [
+  {
+    key: "zorobabel", name: "Zorobabel", role: "Líder de los repatriados",
+    text: "Líder de los judíos repatriados que dirigió la reconstrucción del altar y del templo. Bajo su liderazgo se echaron los cimientos del templo y se organizó el trabajo con maestros y albañiles.",
+    ref: "Esdras 3:2, 8"
+  },
+  {
+    key: "esdras", name: "Esdras", role: "Escriba y sacerdote",
+    text: "Escriba y sacerdote que guio a los exiliados, enseñó la ley de Moisés y la leyó públicamente al pueblo. Aunque llegó después de terminado el templo, fortaleció espiritualmente al pueblo para que lo valorara y mantuviera.",
+    ref: "Esdras 7:6; Nehemías 8:1–3"
+  },
+  {
+    key: "nehemias", name: "Nehemías", role: "Copero y gobernador",
+    text: "Copero del rey que obtuvo permiso para reconstruir los muros de Jerusalén y guio al pueblo pese a la oposición. Al proteger la ciudad con muros, aseguró un entorno seguro para el templo ya reconstruido.",
+    ref: "Nehemías 2:5"
+  },
+  {
+    key: "zacarias", name: "Zacarías", role: "Profeta",
+    text: "Profeta que, junto a Hageo, animó al pueblo a reanudar la construcción del templo tras el retraso. Su mensaje motivó a Zorobabel y Jesúa a retomar la obra que había quedado detenida.",
+    ref: "Esdras 5:1"
+  },
+  {
+    key: "ciro", name: "Ciro el Grande", role: "Rey de Persia",
+    text: "Rey de Persia que, inspirado por Dios, permitió a los judíos regresar a Jerusalén y devolvió los utensilios sagrados del templo. Su decreto hizo posible legal y materialmente la reconstrucción.",
+    ref: "Esdras 1:1–4, 7–8"
+  },
+  {
+    key: "dario", name: "Darío I", role: "Rey de Persia",
+    text: "Rey de Persia que confirmó el decreto de Ciro y permitió terminar la construcción del templo. Ordenó que se financiara la obra con fondos reales, asegurando su culminación.",
+    ref: "Esdras 6:1, 8"
+  },
+  {
+    key: "nabucodonosor", name: "Nabucodonosor", role: "Rey de Babilonia",
+    text: "Rey de Babilonia que destruyó Jerusalén y se llevó los utensilios del templo como botín. Su acción originó la necesidad misma de reconstruir el templo generaciones después.",
+    ref: "Esdras 1:7"
+  },
+  {
+    key: "artajerjes", name: "Artajerjes", role: "Rey de Persia",
+    text: "Rey de Persia que autorizó tanto el viaje de Esdras como el de Nehemías a Jerusalén. Proveyó recursos y autoridad que fortalecieron la vida religiosa en torno al templo ya construido.",
+    ref: "Esdras 7:1, 11; Nehemías 2:1"
+  }
+];
+
+const leadersData = [
+  {
+    name: "Jesúa", role: "Sumo sacerdote",
+    text: "Sumo sacerdote que trabajó junto a Zorobabel restaurando el culto y la obra del templo. Ayudó a edificar el altar de Jehová y a restablecer las ofrendas según la ley de Moisés.",
+    ref: "Esdras 3:2"
+  },
+  {
+    name: "Hageo", role: "Profeta",
+    text: "Profeta que, junto a Zacarías, animó al pueblo a reanudar la construcción del templo tras el retraso, motivando a Zorobabel y Jesúa a retomar la obra detenida.",
+    ref: "Esdras 5:1"
+  },
+  {
+    name: "Sesbasar", role: "Príncipe de Judá",
+    text: "Príncipe de Judá que recibió los utensilios del templo para llevarlos de regreso a Jerusalén. Su labor permitió que los objetos sagrados originales estuvieran disponibles para el culto restaurado.",
+    ref: "Esdras 1:8, 11"
+  }
+];
+
+const kingsData = [
+  {
+    name: "Tatnai", role: "Gobernador persa",
+    text: "Gobernador persa que investigó la obra del templo y luego apoyó su reconstrucción. Al consultar a Darío en vez de detener la obra, permitió que la construcción continuara sin interrupción.",
+    ref: "Esdras 5:3"
+  },
+  {
+    name: "Mitrídates", role: "Tesorero de Ciro",
+    text: "Tesorero de Ciro encargado de contar y entregar los utensilios sagrados a Sesbasar. Su labor administrativa aseguró que los objetos del templo regresaran íntegros a Jerusalén.",
+    ref: "Esdras 1:8"
+  }
+];
+
+const enemiesData = [
+  {
+    name: "Sanbalat", role: "Gobernador samaritano",
+    text: "Gobernador samaritano que se opuso, se burló y conspiró contra la obra de Nehemías. Su hostilidad hacia los muros reflejaba también resistencia a la restauración religiosa que el templo representaba.",
+    ref: "Nehemías 4:1"
+  },
+  {
+    name: "Tobías", role: "Funcionario amonita",
+    text: "Funcionario amonita aliado de Sanbalat en las burlas y amenazas contra la reconstrucción. Intentó desalentar al pueblo, poniendo a prueba su determinación de completar la obra sagrada.",
+    ref: "Nehemías 4:3"
+  },
+  {
+    name: "Gesem", role: "Líder árabe",
+    text: "Líder árabe que se unió a la conspiración contra Nehemías y la obra de los muros. Su oposición externa buscó frenar el fortalecimiento de Jerusalén como centro de adoración.",
+    ref: "Nehemías 6:1"
+  }
+];
+
+const coverData = {
+  eyebrow: "Antiguo Testamento 2026",
+  dates: "27 julio &ndash; 2 agosto",
+  quote: "Yo estoy ocupado en una gran obra",
+  paragraphs: [
+    "Después de 70 años de cautiverio en Babilonia, el pueblo de Judá estaba olvidando Jerusalén, el templo, y su convenio con Dios; no obstante, Dios no los había olvidado a ellos. Él había prometido por medio de Su profeta: &ldquo;Yo os visitaré y os cumpliré mi buena palabra de haceros volver&rdquo; (Jeremías 29:10).",
+    "Para cumplir Su promesa, el Señor levantó siervos entre Su pueblo y entre los gentiles para que realizaran &ldquo;una gran obra&rdquo;: hacer volver a Su pueblo a Jerusalén y, lo que es más importante, que volvieran a sus convenios."
+  ],
+  cta: "Toca aquí para conocerlos"
+};
+
+const introData = {
+  name: "Otros personajes",
+  role: "Voces secundarias, papel esencial",
+  text: "Otras personas tuvieron una participación más breve en la historia, pero cada uno participó, a su manera, en la restauración del pueblo, el templo o los muros de Jerusalén.",
+  ref: ""
+};
+
+const studyData = {
+  name: "Sigue Aprendiendo",
+  role: "Ven, sígueme · Antiguo Testamento 2026",
+  text: "Al igual que la obra de ellos, la nuestra tiene mucho que ver con la Casa del Señor, la ley del Señor y la protección espiritual que hallamos en Él.",
+  url: "leccion-yo-hago-una-gran-obra.html",
+  urlLabel: "Ver la lección"
+};
+
+// registro global de tarjetas en orden de aparición, para el boton "siguiente"
+const allCards = [];
+
+function makeNextHint(idx) {
+  const hint = document.createElement("div");
+  hint.className = "next-hint";
+  hint.innerHTML = `<span>Siguiente</span><span class="chev">&rsaquo;</span>`;
+  hint.addEventListener("click", (e) => {
+    e.stopPropagation();
+    goToNext(idx);
+  });
+  return hint;
+}
+
+function goToNext(idx) {
+  const current = allCards[idx];
+  current.cardEl.classList.remove("flipped");
+  const next = allCards[idx + 1];
+  if (next) {
+    next.wrapEl.scrollIntoView({ behavior: "smooth", block: "center" });
+  } else {
+    const introSection = document.getElementById("grid-intro");
+    if (introSection) introSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+function buildPhotoCard(item, idx) {
+  const wrap = document.createElement("div");
+  wrap.className = "card-wrap";
+  const loadAttr = idx === 0 ? `loading="eager" fetchpriority="high"` : `loading="lazy"`;
+  wrap.innerHTML = `
+    <div class="card">
+      <div class="face face-front photo">
+        <img src="${photoSrc[item.key]}" alt="${item.name}" ${loadAttr}>
+        <div class="front-caption">Toca para leer más</div>
+      </div>
+      <div class="face face-back back-photo">
+        <div class="back-sub">${item.role}</div>
+        <h3 class="back-title">${item.name}</h3>
+        <div class="back-line"></div>
+        <p class="back-text">${item.text}</p>
+        <p class="back-ref">${item.ref}</p>
+      </div>
+    </div>
+  `;
+  const card = wrap.querySelector(".card");
+  const backFace = wrap.querySelector(".face-back");
+  backFace.appendChild(makeNextHint(idx));
+  wrap.addEventListener("click", () => card.classList.toggle("flipped"));
+  allCards.push({ wrapEl: wrap, cardEl: card });
+  return wrap;
+}
+
+function buildBarCard(item, catClass) {
+  const row = document.createElement("div");
+  row.className = "acc-row";
+  row.innerHTML = `
+    <div class="acc-header acc-${catClass}">
+      <img class="acc-icon" src="${TEMPLE_ICON}" alt="Templo" loading="lazy">
+      <div class="acc-text">
+        <div class="acc-name">${item.name}</div>
+        <div class="acc-role">${item.role}</div>
+      </div>
+      <svg class="acc-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="acc-body">
+      <div class="acc-body-inner">
+        <div class="acc-line"></div>
+        <p class="acc-text-body">${item.text}</p>
+        <p class="acc-ref">${item.ref}</p>
+      </div>
+    </div>
+  `;
+
+  const body = row.querySelector(".acc-body");
+  const inner = row.querySelector(".acc-body-inner");
+
+  row.addEventListener("click", () => {
+    const isOpen = row.classList.toggle("open");
+    if (isOpen) {
+      body.style.maxHeight = inner.scrollHeight + "px";
+    } else {
+      body.style.maxHeight = "0px";
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (row.classList.contains("open")) {
+      body.style.maxHeight = inner.scrollHeight + "px";
+    }
+  });
+
+  return row;
+}
+
+function buildSpecialCard(item) {
+  const wrap = document.createElement("div");
+  wrap.className = "card-wrap";
+  wrap.innerHTML = `
+    <div class="card">
+      <div class="face face-front special-face">
+        <img class="temple-icon" src="${TEMPLE_ICON}" alt="Templo" loading="lazy">
+        <p class="special-intro-text">${item.text}</p>
+        <div class="front-tap special-cta">Toca para conocerlos <span class="chev">&rsaquo;</span></div>
+      </div>
+    </div>
+  `;
+  wrap.addEventListener("click", () => {
+    const target = document.getElementById("section-leaders");
+    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  return wrap;
+}
+
+function buildStudyCard(item) {
+  const wrap = document.createElement("div");
+  wrap.className = "card-wrap";
+  wrap.innerHTML = `
+    <div class="card">
+      <div class="face study-face">
+        <div class="back-sub">${item.role}</div>
+        <h3 class="back-title">${item.name}</h3>
+        <div class="back-line"></div>
+        <p class="back-text">${item.text}</p>
+        <div class="study-cta-row">
+          <a class="study-link" href="${item.url}" target="_blank" rel="noopener">${item.urlLabel} &rsaquo;</a>
+          <button type="button" class="study-link study-link-secondary" id="back-to-top">Volver al principio</button>
+        </div>
+      </div>
+    </div>
+  `;
+  return wrap;
+}
+
+function buildCoverCard(item) {
+  const wrap = document.createElement("div");
+  wrap.className = "cover-card";
+  wrap.innerHTML = `
+    <img class="cover-icon" src="${TEMPLE_ICON}" alt="Templo">
+    <div class="cover-eyebrow">${item.eyebrow}</div>
+    <div class="cover-dates">${item.dates}</div>
+    <h1 class="cover-quote">${item.quote}</h1>
+    <div class="cover-text">${item.paragraphs.map(p => `<p>${p}</p>`).join("")}</div>
+    <div class="cover-cta"><span>${item.cta}</span><span class="chev">&rsaquo;</span></div>
+  `;
+  wrap.addEventListener("click", () => {
+    const firstCard = document.querySelector("#grid-photo .card-wrap");
+    if (firstCard) firstCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  return wrap;
+}
+
+const gridPhoto = document.getElementById("grid-photo");
+const gridLeaders = document.getElementById("grid-leaders");
+const gridKings = document.getElementById("grid-kings");
+const gridEnemies = document.getElementById("grid-enemies");
+
+const gridCover = document.getElementById("grid-cover");
+const gridIntro = document.getElementById("grid-intro");
+const gridStudy = document.getElementById("grid-study");
+
+gridCover.appendChild(buildCoverCard(coverData));
+
+let idx = 0;
+photoData.forEach((item) => { gridPhoto.appendChild(buildPhotoCard(item, idx)); idx++; });
+gridIntro.appendChild(buildSpecialCard(introData));
+leadersData.forEach((item) => { gridLeaders.appendChild(buildBarCard(item, "leaders")); });
+kingsData.forEach((item) => { gridKings.appendChild(buildBarCard(item, "kings")); });
+enemiesData.forEach((item) => { gridEnemies.appendChild(buildBarCard(item, "enemies")); });
+gridStudy.appendChild(buildStudyCard(studyData));
+
+const backToTopBtn = document.getElementById("back-to-top");
+if (backToTopBtn) {
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+</script>
+</body>
+</html>
